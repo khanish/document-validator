@@ -1,0 +1,18 @@
+@mixin responsive($breakpoint) {
+    @media screen and (max-width: $breakpoint) {
+        @content;
+    }
+}
+
+@mixin mobilenav-pos {
+    position: absolute;
+    top: 10/16+rem;
+    height: 50/16+rem;
+}
+
+@mixin center($top) {
+    position: absolute;
+    top: $top;
+    left: 50%;
+    transform: translate(-50%, -50%)
+} 

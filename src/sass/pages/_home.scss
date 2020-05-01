@@ -1,0 +1,167 @@
+.homeHead {
+    //border: 1px solid $color-grey;
+    position: relative;
+    height: 450/16+rem;
+    width: 100%;
+    @include responsive(1000px) {
+        height: 300/16+rem;
+    }
+    @include responsive($tablet) {
+        height: 250/16+rem;
+    }
+    &__img--ctn {
+        width: 100%;
+        position: absolute;
+        height: inherit;
+        z-index: -10;
+        &#money {
+            background-image: url('./assests/images/money2.jpg');
+            background-size: 100% 100%;
+        }
+        &#passport {
+            background-image: url('./assests/images/passport2.jpg');
+            background-size: 100% 100%;
+        }
+        &#license {
+            background-image: url('./assests/images/license1.jpg');
+            background-size: 100% 100%;
+        }
+    }
+    &__overlay {
+        position: absolute;
+        width: 100%;
+        height: inherit;
+        background-color:  rgba(10, 10, 10, 0.6);
+        z-index: -7;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 16/16+rem;
+
+        & .circle {
+            width: 25/16+rem;
+            height: 25/16+rem;
+            margin-right: 25/16+rem;
+            font-size: 16/16+rem;
+            display: inline-block;
+            @include responsive(1000px) {
+                height: 20/16+rem;
+                width: 20/16+rem;
+            }
+        }
+        & #circle1 {
+            border-radius: 50%;
+            border: 5px solid $color-primary;
+        }
+
+        & #circle2 {
+            border-radius: 50%;
+            border: 5px solid $color-grey;
+        }
+
+        & #circle3 {
+            border-radius: 50%;
+            border: 5px solid $color-grey;
+        }
+
+    }
+    &__title {
+
+        & span {
+           & mark {
+               color: rgb(1, 1, 10);
+               background-color: transparent;
+           }
+        }
+        &#moneyTitle {
+            position: absolute;
+            top: 30%;
+            @include responsive(700px) {
+                top: 15%;
+            }
+        }
+        &#passportTitle {
+            position: absolute;
+            top: 30%;
+            @include responsive(700px) {
+                top: 15%;
+            }
+        }
+        &#licenseTitle {
+            position: absolute;
+            top: 30%;
+            @include responsive(700px) {
+                top: 15%;
+            }
+        }
+        @include responsive(1000px) {
+            font-size: 3.5rem;
+        }
+        @include responsive($tablet) {
+            font-size: 3rem;
+        }
+        @include responsive(700px) {
+            font-size: 2.5rem;
+        }
+    }
+    &__order-btn {
+        @include center(70%);
+        padding: 1.5rem;
+        background-color: rgb(1, 1, 10);
+        color: whitesmoke;
+        text: {
+            decoration: none;
+            align: center;
+        }
+        &:hover {
+            background-color: rgba(1, 1, 10,.5);
+            border: 2px solid rgb(1, 1, 10);
+        }
+        font: {
+            size: 1.5rem;
+            weight: 600;
+            family: monospace;
+        }
+        border: none; 
+        @include responsive(1000px) {
+            padding: 1rem;
+        }
+        @include responsive(700px) {
+            padding: .5rem;
+            border-radius: 50px;
+        }
+        
+    }
+}
+
+.homeBody {
+    position: relative;
+    z-index: 1;
+    margin-top: -10/16+rm;
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 4rem 8rem;
+    text-align: center;
+    @include responsive(900px) {
+        padding: 3rem 5rem;
+    }
+
+    @include responsive(700px) {
+        padding: 2rem;
+    }
+}
+
+.homemain__header {
+    margin-bottom: 1.5rem;
+}
+.homemain__para {
+    font: {
+        size: 1rem;
+    }
+    line-height: 1.8rem;
+    text: {
+        align: justify;
+    }
+}
