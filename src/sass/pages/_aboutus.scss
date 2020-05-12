@@ -1,0 +1,102 @@
+@mixin pdel {
+    color: rgb(43, 41, 41);
+    letter-spacing: .1rem;
+    text-align: justify;
+    font-size: 1rem;
+}
+
+.abouthead {
+    @include pagehead('./assests/images/ourworkimg.jpg');
+}
+.aboutmain{
+    text-align: center;
+    background-color: whitesmoke;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__ctn {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        width: 85%;
+        flex-wrap: wrap;
+        @include responsive($tablet) {
+            width: 95%;
+        }
+        &-del {
+            width: 65%;
+            line-height: 1.5rem;
+            padding-right: 1rem;
+            @include responsive(1350px) {
+                width: 95%;
+            }
+            @include responsive($tablet) {
+                width: 95%;
+            }
+            & p {
+                @include pdel;
+                margin-bottom: 1rem;
+            }
+            &-title {
+                margin:2rem 0 3rem;
+                @include responsive($mobile) {
+                    line-height: 2rem;
+                }
+                
+                & span {
+                    padding-bottom: 1rem;
+                    display: inline-block;
+                    height: 100%;
+                    border-bottom: 4px solid rgb(65, 43, 56);
+                    @include responsive($mobile) {
+                        display: inline;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+    &__del {
+        @include pdel;
+        width: 85%;
+        margin-bottom: 2rem;
+        &:first-of-type {
+            margin-top: 2rem;
+        }
+    }
+}
+
+.aboutwhatwedo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: {
+        color: $color-grey
+    }
+    padding: 1rem;
+    &__list {
+        width: 60%;
+        margin-left: 2rem;
+        list-style-type: disc;
+        list-style-position: inside;
+        margin-right: 1rem;
+        @include responsive($tablet) {
+            width: 95%;
+        }
+        align-self: center;
+        
+        &--item {
+            font: {
+                size: 1rem;
+            }
+            margin-top: 1rem;
+            background-color: yellowgreen;
+            margin-bottom: 1rem;
+            letter-spacing: .05rem;
+
+        }
+    }
+
+}

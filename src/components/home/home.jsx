@@ -1,5 +1,9 @@
 import React, {Component} from 'react';
 import HomeMain from './homemain';
+import Testimoney from './hometesti';
+import Payment from './payment';
+import HomeContact from './homecontactus';
+import {NavLink} from 'react-router-dom'
 /*import moneyImg from '../../assests/images/money2.jpg';
 import passportImg from '../../assests/images/passport2.jpg';
 import licenseImg from '../../assests/images/license1.jpg';*/
@@ -97,10 +101,19 @@ class Home extends Component {
                     <div class="circle" id="circle3"></div>
                 </div>
                     <h1 className="homeHead__title h1-title" style={{ animation: this.state.headerAnimate }} id={this.state.headerId}>{this.state.header} {this.state.header == 'We Provide' ? <span><mark>Counterfeit</mark> Notes</span> : " "}{this.state.header == 'Buy' ? <span><mark>Real & Legit</mark> Passport</span> : " "}{this.state.header == 'Buy ' ? <span><mark>Fake & Real</mark> Drivers Lisence</span> : " "}</h1>
-                <a href='#' className='homeHead__order-btn' id={this.state.btnId} style={{ animation: this.state.btnAnimate }}>Place An Order</a>
+                <NavLink to="/make-an-order" className='homeHead__order-btn' id={this.state.btnId} style={{ animation: this.state.btnAnimate }}>Place An Order</NavLink>
             </header>
             <div className='homeBody'>
                 <HomeMain />
+            </div>
+            <div className="hometesty">
+                <Testimoney />
+            </div>
+            <div className="homepayment">
+                <Payment />
+            </div>
+            <div className="homepayment">
+                <HomeContact />
             </div>
         </React-Fractor>
         )

@@ -1,0 +1,106 @@
+.orderhead {
+    @include pagehead('./assests/images/passport1.jpg');
+}
+.order {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: {
+        color: white;
+    }
+    padding: 2rem;
+    &__main--explain {
+        font: {
+            size: 1rem;
+        }
+        color: rgb(77, 0, 0);
+        width: 60%;
+        margin-bottom: 2rem;
+        @include responsive(1000px) {
+            width: 90%;
+        }
+    }
+    &-ctn {
+        width: 70%;
+        border: 2px solid rgb(26, 45, 78);
+        padding: 2rem;
+        @include responsive(1024px) {
+            width: 90%;
+        }
+        @include responsive($mobile) {
+            width: 100%;
+        }
+        & .orderForm {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 30%);
+            grid-gap: 1rem;
+            justify-content: center;
+            align-content: center;
+            
+            @include responsive($tablet) {
+                grid-template-columns: repeat(auto-fit, 47%);
+            }
+            @include responsive($mobile) {
+                grid-template-columns: repeat(auto-fit, 100%);
+            }
+
+            &__input {
+                height: 3rem;
+                &:not(:nth-of-type(16)):not(:nth-of-type(17)):not(:nth-of-type(18)) {
+                    background: {
+                    color: rgb(95, 95, 95)
+                    }
+                }
+                border: 1px solid white;
+                padding-left: 1rem;
+                color: white;
+                &::placeholder {
+                    color: rgb(65, 43, 56);
+                }
+                &:focus {
+                    outline: none;
+                }
+                font: {
+                    size: 1rem
+                }
+            }
+            & div {
+                & .orderForm__input {
+                    color: rgb(65, 43, 56)
+                }
+                & label {
+                    font-weight: bold;
+                }
+            }
+            &__submit {
+                width: 60%;
+                background: {
+                    color: rgb(26, 45, 78);
+                }
+                height: 3rem;
+                padding: 1.5rem;
+                text-align: center;
+                border: none;
+                color: white;
+            }
+            
+        }
+    }
+    &__sample {
+        padding: 1rem;
+        & p{
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+        & img {
+            margin-right: 1rem;
+        }
+    }
+}
+
+.order__privacy {
+    margin-top: 2rem;
+    font-weight: bold;
+}

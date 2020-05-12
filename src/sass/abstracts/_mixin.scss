@@ -16,3 +16,110 @@
     left: 50%;
     transform: translate(-50%, -50%)
 } 
+@mixin pagehead($image) {
+    //border: 1px solid $color-grey;
+    position: relative;
+    height: 450/16+rem;
+    width: 100%;
+
+    @include responsive(1000px) {
+        height: 300/16+rem;
+    }
+
+    @include responsive($tablet) {
+        height: 250/16+rem;
+    }
+
+    &__img--ctn {
+        width: 100%;
+        position: fixed;
+        height: inherit;
+        z-index: -10;
+        background-image: url($image);
+        background-size: 100% 100%;
+    }
+
+    &__overlay {
+        position: fixed;
+        width: 100%;
+        height: inherit;
+        background-image: linear-gradient(to right, rgba(255, 255, 255, .2), rgb(29, 32, 36) 50%);
+        z-index: -7;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 16/16+rem;
+
+    }
+
+    &__title {
+        position: absolute;
+        top: 40%;
+
+        @include responsive(1000px) {
+            font-size: 3.5rem;
+        }
+
+        @include responsive($tablet) {
+            font-size: 3rem;
+        }
+
+        @include responsive(700px) {
+            font-size: 2.5rem;
+        }
+    }
+
+    &__order-btn {
+        @include center(70%);
+        padding: 1.5rem;
+        background-color: rgb(65, 43, 56);
+        color: whitesmoke;
+        display: inline-block;
+        align: center;
+        font: {
+            size: 1.5rem;
+            weight: 600;
+            family: monospace;
+        }
+
+        @include responsive(1000px) {
+            padding: 1rem;
+        }
+
+        /**/
+        @include responsive(700px) {
+            padding: .5rem;
+            border-radius: 50px;
+        }
+
+        @include responsive($mobile) {
+            font-size: 1rem;
+        }
+
+    }
+}
+
+@mixin mobile-items {
+    display: none;
+    text-decoration: none;
+    background: {
+        color: $color-grey;
+    }
+    color: $color-primary;
+}
+
+@mixin mobile-items-sub {
+    background: {
+        color: $color-grey;
+    }
+    color: rgb(65, 43, 56);
+    width: 80%;
+    margin: 0 4%;
+    display: none;
+    font: {
+        size: 1rem;
+    }
+    padding-top: 1rem;
+}

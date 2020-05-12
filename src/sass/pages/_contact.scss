@@ -1,0 +1,145 @@
+.contacthead {
+    @include pagehead('./assests/images/passport1.jpg')
+}
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: {
+        image: url('./assests/images/worldmap.jpg');
+        position: center;
+        size: 100% 100%;
+    }
+    padding: 2rem 3rem;
+    @include responsive($tablet) {
+        padding: .9rem;
+    }
+    &__addr {
+        width: 30%;
+        background-color: rgba(255, 255, 255,.7);
+        margin-top: 4rem;
+        @include responsive($tablet) {
+            width: 25%;
+        }
+        @include responsive($mobile) {
+            width: 100%;
+        }
+        &--title {
+            font: {
+                size: 1.5rem
+            }
+            padding: .5rem;
+            border-bottom: 1px solid $color-grey;
+            @include responsive($tablet) {
+                size: 2.5rem
+            }
+        }
+        &--des {
+            margin-top: 1rem;
+            &-icon {
+                display: inline-block;
+                font: {
+                    size: 3rem,
+                }
+                color: rgb(26, 45, 74);
+            }
+            &-des {
+                display: inline-block;
+                font: {
+                    size: 1rem;
+                }
+                padding: 0 .9rem;
+            }
+        }
+    }
+    &__ctn {
+        width: 70%;
+        align-self: center;
+        height: auto;
+        padding: .9rem;
+
+        @include responsive($tablet) {
+            width: 75%;
+        }
+
+        @include responsive($mobile) {
+            width: 100%;
+        }
+
+        &-title {
+            color: rgb(248, 245, 245);
+            margin: 1rem 0;
+            background-color: rgb(26, 45, 74);
+            display: inline-block;
+            padding: 1rem;
+
+            @include responsive($mobile) {
+                text-align: center;
+            }
+        }
+
+        &-form {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 50/16+rem) 2fr;
+            justify-content: center;
+            align-items: center;
+            grid-gap: 1rem;
+
+            @include responsive($mobile) {
+                display: flex;
+                flex-direction: column;
+                width: 95%;
+                padding-left: 5%;
+            }
+
+            & input,
+            & select,
+            & textarea,
+            & button {
+                background: {
+                    color: rgb(26, 25, 25)
+                }
+
+                border: none;
+                padding-left: 1rem;
+                font-size: 1rem;
+
+
+                @include responsive($mobile) {
+                    width: 100%;
+                    margin-bottom: .3rem;
+                }
+                color: whitesmoke;
+
+            }
+
+            & textarea {
+                grid-area: 3/1/4/3;
+                padding-top: 1rem;
+
+                @include responsive($mobile) {
+                    padding-top: 1rem;
+                }
+
+            }
+
+            & input,
+            & select {
+                height: 50/16+rem;
+            }
+
+            & button {
+                height: 40/16+rem;
+                border: none;
+                cursor: pointer;
+                background-color: rgb(26, 45, 74);
+                color: white;
+                border: 1px solid whitesmoke
+            }
+        }
+
+        
+    }
+}

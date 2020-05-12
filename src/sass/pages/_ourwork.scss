@@ -1,0 +1,13 @@
+.ourworks__main {
+    display: grid;
+    width: 100%;
+    grid-template-rows: repeat(auto-fit, 300px);
+    grid-template-columns: repeat(auto-fit,  300px);
+    background: {
+        color: white;
+    }
+    justify-content: center;
+    align-content: center;
+    padding: 2rem;
+    grid-gap: 2rem;
+}
