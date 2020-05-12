@@ -11,15 +11,33 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include responsive($tablet) {
+        padding: 2rem 5rem
+    }
+    @include responsive(700px) {
+        padding: 2rem
+    }
+    
     &-des {
         width: 75%;
+        @include responsive($tablet) {
+            width: 100%;
+        }
         &__title {
-          margin: 0 0 2rem;  
+          margin: 0 0 2rem;
+          @include responsive($tablet) {
+              margin: 0 0 1rem;
+          }
         }
         &__ctn {
             display: flex;
             justify-content: flex-start;
             align-items: flex-start;
+            @include responsive(700px) {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
             &-del {
                 width: 75%;
                 font: {
@@ -27,7 +45,14 @@
                 }
                 margin-right: 1rem;
                 text-align: justify;
-                color: rgb(81, 81, 81)
+                color: rgb(81, 81, 81);
+                @include responsive($tablet) {
+                    width: 80%;
+                }
+                @include responsive(700px) {
+                    width: 100%;
+                    margin-bottom: 1rem;
+                }
             }
         }
         &__main {
