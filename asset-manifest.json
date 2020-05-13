@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/document-validator/static/css/main.84f851e0.chunk.css",
-    "main.js": "/document-validator/static/js/main.fcbb43e0.chunk.js",
-    "main.js.map": "/document-validator/static/js/main.fcbb43e0.chunk.js.map",
+    "main.css": "/document-validator/static/css/main.d8428c26.chunk.css",
+    "main.js": "/document-validator/static/js/main.3e9c75ce.chunk.js",
+    "main.js.map": "/document-validator/static/js/main.3e9c75ce.chunk.js.map",
     "runtime-main.js": "/document-validator/static/js/runtime-main.0e4a4fca.js",
     "runtime-main.js.map": "/document-validator/static/js/runtime-main.0e4a4fca.js.map",
-    "static/js/2.a5f3ba61.chunk.js": "/document-validator/static/js/2.a5f3ba61.chunk.js",
-    "static/js/2.a5f3ba61.chunk.js.map": "/document-validator/static/js/2.a5f3ba61.chunk.js.map",
+    "static/js/2.69c9262b.chunk.js": "/document-validator/static/js/2.69c9262b.chunk.js",
+    "static/js/2.69c9262b.chunk.js.map": "/document-validator/static/js/2.69c9262b.chunk.js.map",
     "index.html": "/document-validator/index.html",
-    "precache-manifest.cc9a62a10fe0948dce1ac46183b35171.js": "/document-validator/precache-manifest.cc9a62a10fe0948dce1ac46183b35171.js",
+    "precache-manifest.f7730a9f1b5ec06d55ff69313ec13d76.js": "/document-validator/precache-manifest.f7730a9f1b5ec06d55ff69313ec13d76.js",
     "service-worker.js": "/document-validator/service-worker.js",
-    "static/css/main.84f851e0.chunk.css.map": "/document-validator/static/css/main.84f851e0.chunk.css.map",
-    "static/js/2.a5f3ba61.chunk.js.LICENSE.txt": "/document-validator/static/js/2.a5f3ba61.chunk.js.LICENSE.txt",
+    "static/css/main.d8428c26.chunk.css.map": "/document-validator/static/css/main.d8428c26.chunk.css.map",
+    "static/js/2.69c9262b.chunk.js.LICENSE.txt": "/document-validator/static/js/2.69c9262b.chunk.js.LICENSE.txt",
     "static/media/index.css": "/document-validator/static/media/worldmap.3baa3349.jpg",
     "static/media/Buy-fake-documents.png": "/document-validator/static/media/Buy-fake-documents.cbf81b05.png",
     "static/media/Calvin.jpg": "/document-validator/static/media/Calvin.fdc5320d.jpg",
@@ -43,8 +43,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.0e4a4fca.js",
-    "static/js/2.a5f3ba61.chunk.js",
-    "static/css/main.84f851e0.chunk.css",
-    "static/js/main.fcbb43e0.chunk.js"
+    "static/js/2.69c9262b.chunk.js",
+    "static/css/main.d8428c26.chunk.css",
+    "static/js/main.3e9c75ce.chunk.js"
   ]
 }
