@@ -375,16 +375,16 @@ body {
       display: block; } }
   .mobilenav__background {
     width: 100%;
-    height: 4.375rem;
+    height: 3.75rem;
     background-color: #0d9cd2;
     border-bottom: 1px solid #8a8a8a;
     box-shadow: -2px 2px 5px #8a8a8a; }
   .mobilenav__logo {
     position: absolute;
     top: 0.625rem;
-    height: 3.125rem;
+    height: 2.5rem;
     width: calc((100%/8)*2);
-    left: 1.25rem; }
+    left: 3%; }
     .mobilenav__logo-link {
       width: 100%;
       height: 100%; }
@@ -423,16 +423,15 @@ body {
   .mobilenav__valid-label {
     position: absolute;
     top: 0.625rem;
-    height: 3.125rem;
-    width: 3.125rem;
-    left: 85%;
-    border: 3px solid #cfcfcf;
-    border-radius: 10px;
-    padding: 0.5625rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    right: 3%;
+    border: 1px solid #cfcfcf;
+    padding: 0.75rem;
     text-align: center; }
     .mobilenav__valid-label span {
       width: 80%;
-      border: 2px solid #cfcfcf;
+      border: 1.5px solid #cfcfcf;
       display: block;
       position: absolute;
       top: 50%;
@@ -442,7 +441,7 @@ body {
     .mobilenav__valid-label::before {
       content: "";
       width: 80%;
-      border: 2px solid #cfcfcf;
+      border: 1.5px solid #cfcfcf;
       position: absolute;
       top: 20%;
       left: 50%;
@@ -451,7 +450,7 @@ body {
     .mobilenav__valid-label::after {
       content: "";
       width: 80%;
-      border: 2px solid #cfcfcf;
+      border: 1.5px solid #cfcfcf;
       position: absolute;
       top: 80%;
       left: 50%;
@@ -777,6 +776,10 @@ Style page content - use this if you want to push the page content to the right 
         padding: 1rem; } }
     @media screen and (max-width: 700px) {
       .homeHead__order-btn {
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         padding: .5rem;
         border-radius: 50px; } }
     @media screen and (max-width: 40rem) {

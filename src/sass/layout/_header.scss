@@ -135,7 +135,6 @@
         &-ctn {
             &:not(:last-of-type) {
                 margin-right: 8/16+rem;
-
             }
             height: 70%;
             display: flex;
@@ -187,7 +186,7 @@
     }
     &__background {
         width: 100%;
-        height: 70/16+rem;
+        height: 60/16+rem;
         background-color: rgba($color-primary, 1);
         border-bottom: 1px solid #8a8a8a;
         box-shadow: -2px 2px 5px #8a8a8a;
@@ -195,7 +194,7 @@
     &__logo {
         @include mobilenav-pos;
         width: calc((100%/8)*2);
-        left: 20/16+rem;
+        left: 3%;
         &-link {
             width: 100%;
             height: 100%;
@@ -244,15 +243,14 @@
     }
     &__valid-label {
         @include mobilenav-pos;
-        width: 50/16+rem;
-        left: 85%;
-        border: 3px solid $color-grey;
-        border-radius: 10px;
-        padding: 9/16+rem;
+        width: 40/16+rem;
+        right: 3%;
+        border: 1px solid $color-grey;
+        padding: 12/16+rem;
         text-align: center;
         & span {
             width: 80%; 
-            border: 2px solid $color-grey;
+            border: 1.5px solid $color-grey;
             display: block;
             @include center(50%);
             transition: all .3s;
@@ -260,14 +258,14 @@
         &::before {
             content: "";
             width: 80%; 
-            border: 2px solid $color-grey;
+            border: 1.5px solid $color-grey;
             @include center(20%);
             transition: all .3s;
         }
         &::after {
             content: "";
             width: 80%; 
-            border: 2px solid $color-grey;
+            border: 1.5px solid $color-grey;
             @include center(80%);
             transition: all .3s;
         }

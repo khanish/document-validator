@@ -131,6 +131,7 @@
         }
         /**/
         @include responsive(700px) {
+            @include center(75%);
             padding: .5rem;
             border-radius: 50px;
         }

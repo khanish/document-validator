@@ -7,7 +7,7 @@
 @mixin mobilenav-pos {
     position: absolute;
     top: 10/16+rem;
-    height: 50/16+rem;
+    height: 40/16+rem;
 }
 
 @mixin center($top) {
