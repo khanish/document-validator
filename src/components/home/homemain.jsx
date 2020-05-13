@@ -1,15 +1,16 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
 
 const HomaMain = () => {
     let services = [
         { title: 'Real & Fake Passport', cont: 'We Valid Documents Producer Are Professionally Skilled In Providing Real & Fake Passport.', readmeUrl: '/services/passport'},
         { title: 'Real Drivers Licence', cont: 'We Offers You A Great Opportunity To Directly Get A Fake And Real Drivers License From Us.', readmeUrl: '/services/driver-license' },
-        { title: 'Buy Counterfeit Notes', cont: 'Counterfeit Notes For Sale Even Though We Are Offering All Kinds Of Fake Money Online.', readmeUrl: '/services/money' },
+        { title: 'Buy Counterfeit Notes', cont: 'Counterfeit Notes For Sale Even Though We Are Offering All Kinds Of Fake Money Online.', readmeUrl: '/services/counterfeit-note' },
         { title: 'Fake & Real Id Cards', cont: 'We Are One Of The Leading Producers Of Real Database Registered ID Cards,Buy Fake Id Cards.', readmeUrl: '/services/id-card' },
-        { title: 'Buy Ielts & TOEFL', cont: 'Buy TOEFL,IELTS Certificates Without Exam.We Can Provide You IELTS & TOEFL Certificate.', readmeUrl: '/services/language-certificates' },
-        { title: 'Buy Fake Certificates', cont: 'Certificate Is Proof You Are The One Who Is Having Knowledge Of Running A Core Business.', readmeUrl: '/services/certificates' },
-        { title: 'Buy Birth Certificate', cont: 'Valid Documents Producer Are Professionally Skilled In Real & Fake Birth Certificate.', readmeUrl: '/services/birth-certificates' },
-        { title: 'Buy Residents Permit', cont: 'We Are Leading Provider For Production Of Fake And Real Resident Permit Online.', readmeUrl: '/services/redence-permit'}
+        { title: 'Buy Ielts & TOEFL', cont: 'Buy TOEFL,IELTS Certificates Without Exam.We Can Provide You IELTS & TOEFL Certificate.', readmeUrl: '/services/ielts-and-toefl' },
+        { title: 'Buy Fake Certificates', cont: 'Certificate Is Proof You Are The One Who Is Having Knowledge Of Running A Core Business.', readmeUrl: '/services/ielts-and-toefl' },
+        { title: 'Buy Birth Certificate', cont: 'Valid Documents Producer Are Professionally Skilled In Real & Fake Birth Certificate.', readmeUrl: '/services/birthcertificate' },
+        { title: 'Buy Residents Permit', cont: 'We Are Leading Provider For Production Of Fake And Real Resident Permit Online.', readmeUrl: '/services/residence-permit'}
     ]
     return <React-Fractor>
                 <h2 className="homemain__header h2-title">Buy Real Registered and Novelty Passports Online</h2>
@@ -38,7 +39,7 @@ const HomaMain = () => {
                                 <p className="homemain__services--card-cont">
                                     {service.cont}
                                 </p>
-                                <a href="#" className="homemain__services--card-detail">Read More</a>
+                                <NavLink to={service.readmeUrl} className="homemain__services--card-detail">Read More</NavLink>
                             </div>
                         )
                     }

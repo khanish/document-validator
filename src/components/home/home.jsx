@@ -101,7 +101,7 @@ class Home extends Component {
                     <div class="circle" id="circle3"></div>
                 </div>
                     <h1 className="homeHead__title h1-title" style={{ animation: this.state.headerAnimate }} id={this.state.headerId}>{this.state.header} {this.state.header == 'We Provide' ? <span><mark>Counterfeit</mark> Notes</span> : " "}{this.state.header == 'Buy' ? <span><mark>Real & Legit</mark> Passport</span> : " "}{this.state.header == 'Buy ' ? <span><mark>Fake & Real</mark> Drivers Lisence</span> : " "}</h1>
-                <NavLink to="/make-an-order" className='homeHead__order-btn' id={this.state.btnId} style={{ animation: this.state.btnAnimate }}>Place An Order</NavLink>
+                    <NavLink to="/place-order" className='homeHead__order-btn' id={this.state.btnId} style={{ animation: this.state.btnAnimate }}>Place An Order</NavLink>
             </header>
             <div className='homeBody'>
                 <HomeMain />

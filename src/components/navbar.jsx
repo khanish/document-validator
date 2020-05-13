@@ -17,13 +17,9 @@ class Header extends Component {
                 document.getElementById("navigation").style.paddingTop = '2rem';
                 document.getElementById("navigation").style.height = '7rem';
                 document.getElementById("navigation").style.position = "fixed";
-                document.getElementById("mobileNav").style.top = 0;
-                document.getElementById("mobileNav").style.marginTop = 0;
-                document.getElementById("mobileNav").style.position = "fixed";
                 
             } else {
                 document.getElementById("navigation").style.position = 'relative';
-                document.getElementById("mobileNav").style.position = "fixed";
                 document.getElementById("navigation").style.top = '0';
                 document.getElementById("navigation").style.paddingTop = '0';
                 document.getElementById("navigation").style.height = '4rem';

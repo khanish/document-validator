@@ -15,4 +15,7 @@
         size: 2rem;
         family: sans-serif;
     }
+    @include responsive($mobile) {
+        font-size: 1.5rem;
+    }
 }

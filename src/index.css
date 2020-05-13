@@ -116,7 +116,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 80%; }
+  font-size: 60%; }
 
 *, *::before, *::after {
   padding: 0;
@@ -135,6 +135,9 @@ body {
   color: #412b38;
   font-size: 2rem;
   font-family: sans-serif; }
+  @media screen and (max-width: 40rem) {
+    .h2-title {
+      font-size: 1.5rem; } }
 
 .footer {
   width: 100%;
@@ -367,7 +370,7 @@ body {
 
 .mobilenav {
   display: none;
-  position: relative;
+  position: fixed;
   width: 100%;
   z-index: 40; }
   @media screen and (max-width: 50rem) {
@@ -730,22 +733,13 @@ Style page content - use this if you want to push the page content to the right 
       background-color: transparent; }
     .homeHead__title#moneyTitle {
       position: absolute;
-      top: 30%; }
-      @media screen and (max-width: 700px) {
-        .homeHead__title#moneyTitle {
-          top: 30%; } }
+      top: 33%; }
     .homeHead__title#passportTitle {
       position: absolute;
-      top: 30%; }
-      @media screen and (max-width: 700px) {
-        .homeHead__title#passportTitle {
-          top: 30%; } }
+      top: 33%; }
     .homeHead__title#licenseTitle {
       position: absolute;
-      top: 30%; }
-      @media screen and (max-width: 700px) {
-        .homeHead__title#licenseTitle {
-          top: 30%; } }
+      top: 33%; }
     @media screen and (max-width: 1000px) {
       .homeHead__title {
         font-size: 3.5rem; } }
@@ -799,6 +793,9 @@ Style page content - use this if you want to push the page content to the right 
   padding: 2rem 0 0 0;
   margin-bottom: .8rem;
   width: 100%; }
+  @media screen and (max-width: 40rem) {
+    .homemain__header {
+      margin-bottom: .5rem; } }
 
 .homemain__para {
   width: 100%;
@@ -808,7 +805,7 @@ Style page content - use this if you want to push the page content to the right 
   padding: 0 8rem 0; }
   @media screen and (max-width: 700px) {
     .homemain__para {
-      padding: 1rem 2rem; } }
+      padding: .5rem 2rem; } }
 
 .homemain__services {
   display: grid;
@@ -1131,12 +1128,11 @@ Style page content - use this if you want to push the page content to the right 
         font-size: 3.5rem; } }
     @media screen and (max-width: 50rem) {
       .abouthead__title {
-        top: 20%;
-        font-size: 3rem; } }
+        font-size: 2.5rem; } }
     @media screen and (max-width: 700px) {
       .abouthead__title {
-        top: 30%;
-        font-size: 2.5rem; } }
+        top: 40%;
+        font-size: 2rem; } }
   .abouthead__order-btn {
     position: absolute;
     top: 70%;
@@ -1156,16 +1152,14 @@ Style page content - use this if you want to push the page content to the right 
         padding: 1rem; } }
     @media screen and (max-width: 700px) {
       .abouthead__order-btn {
-        padding: .5rem;
-        border-radius: 50px;
-        font-size: 1.2rem;
+        padding: .75rem;
         position: absolute;
-        top: 60%;
+        top: 65%;
         left: 50%;
         transform: translate(-50%, -50%); } }
     @media screen and (max-width: 40rem) {
       .abouthead__order-btn {
-        font-size: 1rem; } }
+        font-size: 1.1rem; } }
 
 .aboutmain {
   text-align: center;
@@ -1304,12 +1298,11 @@ Style page content - use this if you want to push the page content to the right 
         font-size: 3.5rem; } }
     @media screen and (max-width: 50rem) {
       .orderhead__title {
-        top: 20%;
-        font-size: 3rem; } }
+        font-size: 2.5rem; } }
     @media screen and (max-width: 700px) {
       .orderhead__title {
-        top: 30%;
-        font-size: 2.5rem; } }
+        top: 40%;
+        font-size: 2rem; } }
   .orderhead__order-btn {
     position: absolute;
     top: 70%;
@@ -1329,16 +1322,14 @@ Style page content - use this if you want to push the page content to the right 
         padding: 1rem; } }
     @media screen and (max-width: 700px) {
       .orderhead__order-btn {
-        padding: .5rem;
-        border-radius: 50px;
-        font-size: 1.2rem;
+        padding: .75rem;
         position: absolute;
-        top: 60%;
+        top: 65%;
         left: 50%;
         transform: translate(-50%, -50%); } }
     @media screen and (max-width: 40rem) {
       .orderhead__order-btn {
-        font-size: 1rem; } }
+        font-size: 1.1rem; } }
 
 .order {
   width: 100%;
@@ -1451,12 +1442,11 @@ Style page content - use this if you want to push the page content to the right 
         font-size: 3.5rem; } }
     @media screen and (max-width: 50rem) {
       .contacthead__title {
-        top: 20%;
-        font-size: 3rem; } }
+        font-size: 2.5rem; } }
     @media screen and (max-width: 700px) {
       .contacthead__title {
-        top: 30%;
-        font-size: 2.5rem; } }
+        top: 40%;
+        font-size: 2rem; } }
   .contacthead__order-btn {
     position: absolute;
     top: 70%;
@@ -1476,16 +1466,14 @@ Style page content - use this if you want to push the page content to the right 
         padding: 1rem; } }
     @media screen and (max-width: 700px) {
       .contacthead__order-btn {
-        padding: .5rem;
-        border-radius: 50px;
-        font-size: 1.2rem;
+        padding: .75rem;
         position: absolute;
-        top: 60%;
+        top: 65%;
         left: 50%;
         transform: translate(-50%, -50%); } }
     @media screen and (max-width: 40rem) {
       .contacthead__order-btn {
-        font-size: 1rem; } }
+        font-size: 1.1rem; } }
 
 .contact {
   display: flex;
@@ -1629,12 +1617,11 @@ Style page content - use this if you want to push the page content to the right 
         font-size: 3.5rem; } }
     @media screen and (max-width: 50rem) {
       .servicespassporthead__title {
-        top: 20%;
-        font-size: 3rem; } }
+        font-size: 2.5rem; } }
     @media screen and (max-width: 700px) {
       .servicespassporthead__title {
-        top: 30%;
-        font-size: 2.5rem; } }
+        top: 40%;
+        font-size: 2rem; } }
   .servicespassporthead__order-btn {
     position: absolute;
     top: 70%;
@@ -1654,16 +1641,14 @@ Style page content - use this if you want to push the page content to the right 
         padding: 1rem; } }
     @media screen and (max-width: 700px) {
       .servicespassporthead__order-btn {
-        padding: .5rem;
-        border-radius: 50px;
-        font-size: 1.2rem;
+        padding: .75rem;
         position: absolute;
-        top: 60%;
+        top: 65%;
         left: 50%;
         transform: translate(-50%, -50%); } }
     @media screen and (max-width: 40rem) {
       .servicespassporthead__order-btn {
-        font-size: 1rem; } }
+        font-size: 1.1rem; } }
 
 .servicesbirthcerthead {
   position: relative;
@@ -1702,12 +1687,11 @@ Style page content - use this if you want to push the page content to the right 
         font-size: 3.5rem; } }
     @media screen and (max-width: 50rem) {
       .servicesbirthcerthead__title {
-        top: 20%;
-        font-size: 3rem; } }
+        font-size: 2.5rem; } }
     @media screen and (max-width: 700px) {
       .servicesbirthcerthead__title {
-        top: 30%;
-        font-size: 2.5rem; } }
+        top: 40%;
+        font-size: 2rem; } }
   .servicesbirthcerthead__order-btn {
     position: absolute;
     top: 70%;
@@ -1727,16 +1711,14 @@ Style page content - use this if you want to push the page content to the right 
         padding: 1rem; } }
     @media screen and (max-width: 700px) {
       .servicesbirthcerthead__order-btn {
-        padding: .5rem;
-        border-radius: 50px;
-        font-size: 1.2rem;
+        padding: .75rem;
         position: absolute;
-        top: 60%;
+        top: 65%;
         left: 50%;
         transform: translate(-50%, -50%); } }
     @media screen and (max-width: 40rem) {
       .servicesbirthcerthead__order-btn {
-        font-size: 1rem; } }
+        font-size: 1.1rem; } }
 
 .services {
   display: flex;
