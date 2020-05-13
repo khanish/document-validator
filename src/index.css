@@ -702,7 +702,7 @@ Style page content - use this if you want to push the page content to the right 
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem; }
+    padding: 2.5rem; }
     .homeHead__overlay .circle {
       width: 1.5625rem;
       height: 1.5625rem;
@@ -723,36 +723,38 @@ Style page content - use this if you want to push the page content to the right 
     .homeHead__overlay #circle3 {
       border-radius: 50%;
       border: 5px solid #cfcfcf; }
-  .homeHead__title span mark {
-    color: #01010a;
-    background-color: transparent; }
-  .homeHead__title#moneyTitle {
-    position: absolute;
-    top: 30%; }
+  .homeHead__title {
+    padding: 0 2rem; }
+    .homeHead__title span mark {
+      color: #01010a;
+      background-color: transparent; }
+    .homeHead__title#moneyTitle {
+      position: absolute;
+      top: 30%; }
+      @media screen and (max-width: 700px) {
+        .homeHead__title#moneyTitle {
+          top: 30%; } }
+    .homeHead__title#passportTitle {
+      position: absolute;
+      top: 30%; }
+      @media screen and (max-width: 700px) {
+        .homeHead__title#passportTitle {
+          top: 30%; } }
+    .homeHead__title#licenseTitle {
+      position: absolute;
+      top: 30%; }
+      @media screen and (max-width: 700px) {
+        .homeHead__title#licenseTitle {
+          top: 30%; } }
+    @media screen and (max-width: 1000px) {
+      .homeHead__title {
+        font-size: 3.5rem; } }
+    @media screen and (max-width: 50rem) {
+      .homeHead__title {
+        font-size: 2.5rem; } }
     @media screen and (max-width: 700px) {
-      .homeHead__title#moneyTitle {
-        top: 25%; } }
-  .homeHead__title#passportTitle {
-    position: absolute;
-    top: 30%; }
-    @media screen and (max-width: 700px) {
-      .homeHead__title#passportTitle {
-        top: 25%; } }
-  .homeHead__title#licenseTitle {
-    position: absolute;
-    top: 30%; }
-    @media screen and (max-width: 700px) {
-      .homeHead__title#licenseTitle {
-        top: 25%; } }
-  @media screen and (max-width: 1000px) {
-    .homeHead__title {
-      font-size: 3.5rem; } }
-  @media screen and (max-width: 50rem) {
-    .homeHead__title {
-      font-size: 3rem; } }
-  @media screen and (max-width: 700px) {
-    .homeHead__title {
-      font-size: 2.5rem; } }
+      .homeHead__title {
+        font-size: 2rem; } }
   .homeHead__order-btn {
     position: absolute;
     top: 70%;
@@ -780,11 +782,10 @@ Style page content - use this if you want to push the page content to the right 
         top: 75%;
         left: 50%;
         transform: translate(-50%, -50%);
-        padding: .5rem;
-        border-radius: 50px; } }
+        padding: .75rem; } }
     @media screen and (max-width: 40rem) {
       .homeHead__order-btn {
-        font-size: 1rem; } }
+        font-size: 1.1rem; } }
 
 .homeBody {
   position: relative;

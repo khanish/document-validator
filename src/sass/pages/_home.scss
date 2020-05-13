@@ -38,7 +38,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 16/16+rem;
+        padding: 40/16+rem;
 
         & .circle {
             width: 25/16+rem;
@@ -76,35 +76,36 @@
                background-color: transparent;
            }
         }
+        padding: 0 32/16+rem;
         &#moneyTitle {
             position: absolute;
             top: 30%;
             @include responsive(700px) {
-                top: 25%;
+                top: 30%;
             }
         }
         &#passportTitle {
             position: absolute;
             top: 30%;
            @include responsive(700px) {
-                top: 25%;
+                top: 30%;
             }
         }
         &#licenseTitle {
             position: absolute;
             top: 30%;
             @include responsive(700px) {
-                top: 25%;
+                top: 30%;
             }
         }
         @include responsive(1000px) {
             font-size: 3.5rem;
         }
         @include responsive($tablet) {
-            font-size: 3rem;
+            font-size: 2.5rem;
         }
         @include responsive(700px) {
-            font-size: 2.5rem;
+            font-size: 2rem;
         }
     }
     &__order-btn {
@@ -132,11 +133,10 @@
         /**/
         @include responsive(700px) {
             @include center(75%);
-            padding: .5rem;
-            border-radius: 50px;
+            padding: .75rem;
         }
         @include responsive($mobile) {
-            font-size: 1rem;
+            font-size: 1.1rem;
         }
 
     }
