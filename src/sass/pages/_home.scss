@@ -79,23 +79,23 @@
         &#moneyTitle {
             position: absolute;
             top: 30%;
-            /*@include responsive(700px) {
-                top: 15%;
-            }*/
+            @include responsive(700px) {
+                top: 25%;
+            }
         }
         &#passportTitle {
             position: absolute;
             top: 30%;
-           /* @include responsive(700px) {
-                top: 15%;
-            }*/
+           @include responsive(700px) {
+                top: 25%;
+            }
         }
         &#licenseTitle {
             position: absolute;
             top: 30%;
-            /*@include responsive(700px) {
-                top: 15%;
-            }*/
+            @include responsive(700px) {
+                top: 25%;
+            }
         }
         @include responsive(1000px) {
             font-size: 3.5rem;

@@ -728,22 +728,22 @@ Style page content - use this if you want to push the page content to the right 
     background-color: transparent; }
   .homeHead__title#moneyTitle {
     position: absolute;
-    top: 30%;
-    /*@include responsive(700px) {
-                top: 15%;
-            }*/ }
+    top: 30%; }
+    @media screen and (max-width: 700px) {
+      .homeHead__title#moneyTitle {
+        top: 25%; } }
   .homeHead__title#passportTitle {
     position: absolute;
-    top: 30%;
-    /* @include responsive(700px) {
-                top: 15%;
-            }*/ }
+    top: 30%; }
+    @media screen and (max-width: 700px) {
+      .homeHead__title#passportTitle {
+        top: 25%; } }
   .homeHead__title#licenseTitle {
     position: absolute;
-    top: 30%;
-    /*@include responsive(700px) {
-                top: 15%;
-            }*/ }
+    top: 30%; }
+    @media screen and (max-width: 700px) {
+      .homeHead__title#licenseTitle {
+        top: 25%; } }
   @media screen and (max-width: 1000px) {
     .homeHead__title {
       font-size: 3.5rem; } }
