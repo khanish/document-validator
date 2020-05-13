@@ -147,7 +147,8 @@ body {
   background-color: #1d2024;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  height: auto; }
+  height: auto;
+  padding-left: 1rem; }
   .footer__about {
     width: 25rem;
     margin-top: 1rem;
