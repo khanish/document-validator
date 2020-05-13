@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/document-validator/static/css/main.d8428c26.chunk.css",
+    "main.css": "/document-validator/static/css/main.3b20a103.chunk.css",
     "main.js": "/document-validator/static/js/main.3e9c75ce.chunk.js",
     "main.js.map": "/document-validator/static/js/main.3e9c75ce.chunk.js.map",
     "runtime-main.js": "/document-validator/static/js/runtime-main.0e4a4fca.js",
@@ -8,9 +8,9 @@
     "static/js/2.69c9262b.chunk.js": "/document-validator/static/js/2.69c9262b.chunk.js",
     "static/js/2.69c9262b.chunk.js.map": "/document-validator/static/js/2.69c9262b.chunk.js.map",
     "index.html": "/document-validator/index.html",
-    "precache-manifest.f7730a9f1b5ec06d55ff69313ec13d76.js": "/document-validator/precache-manifest.f7730a9f1b5ec06d55ff69313ec13d76.js",
+    "precache-manifest.d3334b3934f3be99347778df449faae7.js": "/document-validator/precache-manifest.d3334b3934f3be99347778df449faae7.js",
     "service-worker.js": "/document-validator/service-worker.js",
-    "static/css/main.d8428c26.chunk.css.map": "/document-validator/static/css/main.d8428c26.chunk.css.map",
+    "static/css/main.3b20a103.chunk.css.map": "/document-validator/static/css/main.3b20a103.chunk.css.map",
     "static/js/2.69c9262b.chunk.js.LICENSE.txt": "/document-validator/static/js/2.69c9262b.chunk.js.LICENSE.txt",
     "static/media/index.css": "/document-validator/static/media/worldmap.3baa3349.jpg",
     "static/media/Buy-fake-documents.png": "/document-validator/static/media/Buy-fake-documents.cbf81b05.png",
@@ -44,7 +44,7 @@
   "entrypoints": [
     "static/js/runtime-main.0e4a4fca.js",
     "static/js/2.69c9262b.chunk.js",
-    "static/css/main.d8428c26.chunk.css",
+    "static/css/main.3b20a103.chunk.css",
     "static/js/main.3e9c75ce.chunk.js"
   ]
 }
