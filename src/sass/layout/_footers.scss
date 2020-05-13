@@ -19,7 +19,7 @@
     padding-top: 2rem;
     padding-bottom: 2rem;
     height: auto;
-    padding-left: 1rem;
+    padding-left: 1.5rem;
 
     &__about {
        @include footer-title;
@@ -71,6 +71,10 @@
     }
     &__contact {
         @include footer-title;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
         &--del {
             color: rgba($color-grey, .8);
             font: {
@@ -78,12 +82,17 @@
                 margin-bottom: .6rem;
             }
             & span {
-                margin-right: 1rem;
+                margin-right: 1.5rem;
+                & i {
+                    font-size: 1.5rem;
+                }
             }
             & address {
                 display: inline-block;
             }
+            margin-bottom: .3rem;
         }
+        
 
     }
     &__social {

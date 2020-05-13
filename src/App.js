@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import Header from './components/navbar';
 import './App.css';
-import reactRouterDom, { Route, BrowserRouter, Switch, NavLink } from 'react-router-dom';
+import reactRouterDom, { Route, BrowserRouter, Switch } from 'react-router-dom';
 import Home from './components/home/home';
 import Footer from './components/footer';
 import AboutUs from './components/aboutus/aboutus';
@@ -17,25 +17,27 @@ import Idcard from './components/services/idcard';
 import Ielts from './components/services/ielt';
 import License from './components/services/license';
 import Permit from './components/services/residence';
+import ScrollToTop from './components/scrolltop';
 
 function App() {
   return (
     <React-Fragment>
       <BrowserRouter>
+        <ScrollToTop />
         <Header />
         <Switch>
           <Route path='/' component={Home} exact />
-          <Route path='/about-us' component={AboutUs} />
-          <Route path='/our-works' component={OurWork} />
-          <Route path='/place-order' component={Order} />
-          <Route path='/contact-us' component={Contact} />
-          <Route path='/services/passport' component={Passport} />
-          <Route path='/services/birthcertificate' component={Birthcertificate} />
-          <Route path='/services/counterfeit-note' component={Fakenotes} />
-          <Route path='/services/id-card' component={Idcard} />
-          <Route path='/services/ielts-and-toefl' component={Ielts} />
-          <Route path='/services/driver-license' component={License} />
-          <Route path='/services/residence-permit' component={Permit} />
+          <Route path={'/about-us'} component={AboutUs} />
+          <Route path={'/our-works'} component={OurWork} />
+          <Route path={'/place-order'} component={Order} />
+          <Route path={'/contact-us'} component={Contact} />
+          <Route path={'/services/passport'} component={Passport} />
+          <Route path={'/services/birthcertificate'} component={Birthcertificate} />
+          <Route path={'/services/counterfeit-note'} component={Fakenotes} />
+          <Route path={'/services/id-card'} component={Idcard} />
+          <Route path={'/services/ielts-and-toefl'} component={Ielts} />
+          <Route path={'/services/driver-license'} component={License} />
+          <Route path={'/services/residence-permit'} component={Permit} />
           <Route component={ErrorPage} />
         </Switch>
         <Footer />

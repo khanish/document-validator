@@ -37,7 +37,7 @@ const Footer = () => {
                 CONTACT INFO
             </h2>
             <section className="footer__contact--del">
-                <span><i class="fas fa-map-signs"></i></span><address>525 Grundy Street, Baltinore, MD 21224, USA</address>
+                <span><i class="fas fa-map-signs"></i></span><address>525 Grundy Street, Baltinore, <br />MD 21224, USA</address>
             </section>
             <section className="footer__contact--del">
                 <span><i class="fas fa-phone-volume"></i></span><address>+1 (623) 282-1536</address>

@@ -91,12 +91,12 @@
 
         /**/
         @include responsive(700px) {
-            padding: .75rem;
+            padding: .5rem;
            @include center(65%);
         }
 
         @include responsive($mobile) {
-            font-size: 1.1rem;
+            font-size: .8rem;
         }
 
     }
