@@ -148,7 +148,7 @@ body {
   padding-top: 2rem;
   padding-bottom: 2rem;
   height: auto;
-  padding-left: 1.5rem; }
+  padding-left: 1rem; }
   .footer__about {
     width: 25rem;
     margin-top: 1rem;
@@ -195,11 +195,7 @@ body {
   .footer__contact {
     width: 25rem;
     margin-top: 1rem;
-    padding: 0 .5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start; }
+    padding: 0 .5rem; }
     .footer__contact--title {
       text-align: center;
       margin-bottom: 1rem; }
@@ -213,10 +209,11 @@ body {
       .footer__contact--del span {
         margin-right: 1.5rem; }
         .footer__contact--del span i {
-          font-size: 1.5rem; }
+          font-size: 2rem; }
       .footer__contact--del address {
         display: inline-block; }
   .footer__social {
+    margin-top: 1rem;
     width: 25rem;
     margin-top: 1rem;
     padding: 0 .5rem; }
@@ -309,6 +306,9 @@ body {
         outline: none; }
       .header__search-input-item {
         background-color: rgba(207, 207, 207, 0.145); }
+  @media screen and (max-width: 50rem) {
+    .header {
+      display: none; } }
   @media screen and (max-width: 40rem) {
     .header {
       display: none; } }
@@ -378,7 +378,7 @@ body {
 
 .mobilenav {
   display: none;
-  position: fixed;
+  position: relative;
   width: 100%;
   z-index: 40; }
   @media screen and (max-width: 50rem) {
@@ -1151,7 +1151,7 @@ Style page content - use this if you want to push the page content to the right 
     color: whitesmoke;
     display: inline-block;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 600;
     font-family: monospace;
     /**/ }
@@ -1321,7 +1321,7 @@ Style page content - use this if you want to push the page content to the right 
     color: whitesmoke;
     display: inline-block;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 600;
     font-family: monospace;
     /**/ }
@@ -1465,7 +1465,7 @@ Style page content - use this if you want to push the page content to the right 
     color: whitesmoke;
     display: inline-block;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 600;
     font-family: monospace;
     /**/ }
@@ -1640,7 +1640,7 @@ Style page content - use this if you want to push the page content to the right 
     color: whitesmoke;
     display: inline-block;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 600;
     font-family: monospace;
     /**/ }
@@ -1710,7 +1710,7 @@ Style page content - use this if you want to push the page content to the right 
     color: whitesmoke;
     display: inline-block;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 600;
     font-family: monospace;
     /**/ }

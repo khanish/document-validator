@@ -20,6 +20,7 @@ class Header extends Component {
                 
             } else {
                 document.getElementById("navigation").style.position = 'relative';
+                document.getElementById("mobileNav").style.position = "fixed";
                 document.getElementById("navigation").style.top = '0';
                 document.getElementById("navigation").style.paddingTop = '0';
                 document.getElementById("navigation").style.height = '4rem';

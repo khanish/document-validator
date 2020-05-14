@@ -94,6 +94,9 @@
             }
         }
     }
+    @include responsive($tablet) {
+        display: none
+    }
     @include responsive($mobile) {
         display: none
     }
@@ -178,7 +181,7 @@
 }
 .mobilenav {
     display: none;
-    position: fixed;
+    position: relative;
     width: 100%;
     z-index: 40;
     @include responsive($tablet) {
